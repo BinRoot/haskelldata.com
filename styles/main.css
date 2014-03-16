@@ -1,6 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Abel);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
+body {
+  margin-top: 0px;
+}
+@media (max-width: 800px) {
+  body {
+    margin-top: 70px;
+  }
+}
+
 .nav-preorder {
     margin-top:10px;
     height: 50px;
@@ -56,6 +65,11 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
+}
+
+h3 {
+    padding-top:5px;
+    padding-left:10px;
 }
 
 /* Make the masthead heading the same height as the navigation */
