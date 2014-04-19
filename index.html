@@ -24,13 +24,10 @@
     <!-- endbuild -->
 
     <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css">
-    <link rel="stylesheet" href="bower_components/jquery.videobackground/themes/jquery.videobackground.css">
     <script src="bower_components/highlightjs/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-
-    <div class="video-background"></div>
 
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -48,93 +45,220 @@
     </nav>
 
 
-    <div class="jumbotron page">
-      <h1>Over 130 Practical Recipes For Data Analysis and Machine Learning</h1>
-    </div>
 
 
     <div class="container page">
+      <div class="page">
+        <center>
+          <h1>Over 130 Practical Recipes For Data Analysis and Machine Learning</h1>
+        </center>
+      </div>
+
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">1.</span> Obtaining Data</h4>
+          <h4><span class="chapter-number">Chapter 1</span>&nbsp;&nbsp;<span class="chapter-title">Obtaining Data</span></h4>
           <pre><code class="haskell">input <- readFile "input.txt"</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>Data is everywhere, logging is cheap, and analysis is inevitable. One of the most fundamental concepts of this chapter is about <strong>gathering useful data</strong>. After building a collection, we must learn to represent this data in code. The primary focus will be on first <strong>obtaining data</strong>, and in later chapters  we will enumerate ways to represent it. This chapter will cover the following essential methods for working with Haskell input.</p>
+<ul>
+<li>Gathering various sources to build a corpus</li>
+<li>Reading raw text from a <hl>file path</hl></li>
+<li>Reading and representing a <hl>CSV</hl> file</li>
+<li>Parsing a <hl>JSON</hl> file by using aeson</li>
+<li>Parsing <hl>XML</hl> using the HXT package</li>
+<li>Reading table rows from <hl>HTML</hl></li>
+<li>Downloading data from <hl>HTTP GET</hl> requests</li>
+<li>Downloading data from <hl>HTTP POST</hl> requests</li>
+<li>Mining data from online directory searches</li>
+<li>Querying <hl>MongoDB</hl> for data (local)</li>
+<li>Querying <hl>MongoDB</hl> for data (remote)</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">2.</span> Cleaning Data</h4>
+          <h4><span class="chapter-number">Chapter 2</span>&nbsp;&nbsp;<span class="chapter-title">Cleaning Data</span></h4>
           <pre><code class="haskell">isWhitespace x = elem x " \t\r\n"</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>After obtaining raw text, the next natural step is to <strong>validate and clean</strong> it carefully. Even the slightest bias may risk the integrity of the results. We must take great precautionary measures, involving thorough inspection, to ensure sanity checks on our data before we begin to understand it. This section should be a starting point for <strong>cleaning data in haskell</strong>.</p>
+<ul>
+<li>Trimming excess <hl>whitespace</hl></li>
+<li>Ignoring <hl>punctuation</hl> and specific characters</li>
+<li>Coping with unexpected or missing input</li>
+<li>Validating records by matching <hl>regular expressions</hl></li>
+<li>Deduplication of non-conflicting data items</li>
+<li>Deduplication of conflicting data items</li>
+<li>Implemeting a frequency table using Data.List</li>
+<li>Implemeting a frequency table using Data.MultiSet</li>
+<li>Computing the <hl>Manhattan distance</hl></li>
+<li>Computing the <hl>Euclidean distance</hl></li>
+<li>Comparing scaled data using the <hl>Pearson Correlation</hl> Coefficient</li>
+<li>Comparing sparse data using <hl>cosine similarity</hl></li>
+</ul>
           <br>
         </div>
       </div>
+
+      <div class="row marketing promo">
+        <div class="col-lg-12">
+          <center><a class="buzz-out"  href=""><img width="300px" src="images/book.png"></center></a>
+        </div>
+      </div>
+
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">3.</span> Manipulating Strings</h4>
+          <h4><span class="chapter-number">Chapter 3</span>&nbsp;&nbsp;<span class="chapter-title">Manipulating Strings</span></h4>
           <pre><code class="haskell">let strs = splitOn "," "bob,joe,nick"</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>Many interesting analysis techniques can be used on a large corpus of words. Whether it be examining the structure of a sentence or the content of a book, these recipes will introduce us to some useful tools. This section focuses on <strong>base-conversions</strong>, <strong>search algorithms</strong>, and <strong>similarity measurements with strings</strong>.</p>
+<ul>
+<li>Displaying a number in another base</li>
+<li>Reading a number from another base</li>
+<li>Searching for a <hl>substring</hl> using Data.ByteString</li>
+<li>Searching a string using the <hl>Boyer–Moore–Horspool</hl> algorithm</li>
+<li>Searching a string using the <hl>Rabin-Karp</hl> algorithm</li>
+<li><hl>Split</hl> string on lines, words, or arbitrary tokens</li>
+<li>Finding the <hl>longest common subsequence</hl></li>
+<li>Computing a phonetic code</li>
+<li>Calculating the <hl>edit distance</hl> between two strings</li>
+<li>Computing <hl>Jaro–Winkler</hl> distance between two strings</li>
+<li>Scraping a body of text for words</li>
+<li>Finding strings within one edit distance</li>
+<li>Fixing <hl>spelling mistakes</hl> using edit distance</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">4.</span> Using Trees</h4>
+          <h4><span class="chapter-number">Chapter 4</span>&nbsp;&nbsp;<span class="chapter-title">Using Trees</span></h4>
           <pre><code class="haskell">data Tree = Node v l r | Null</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>Everything from creating simple <strong>binary trees</strong> to practical applications such as <strong>Huffman trees</strong> are covered in this section.</p>
+<ul>
+<li>Defining a <hl>binary tree</hl> data type</li>
+<li>Defining a <hl>rose tree</hl> (multi-way tree) data type</li>
+<li>Traversing a tree <hl>depth-first</hl></li>
+<li>Traversing a tree <hl>breadth-first</hl></li>
+<li>Implementing a Foldable instance for a tree</li>
+<li>Calculating the <hl>height</hl> of a tree</li>
+<li>Implementing a binary search tree data structure</li>
+<li>Verifying the order property of a binary search tree</li>
+<li>Using an <hl>AVL</hl> tree from Data.Tree.AVL</li>
+<li>Implementing a <hl>min-heap</hl> data structure</li>
+<li>Encoding a string using a <hl>Huffman tree</hl></li>
+<li>Decoding a Huffman code</li>
+</ul>
           <br>
         </div>
       </div>
+
+      <div class="row marketing promo">
+        <div class="col-lg-12">
+          <script type="text/javascript">
+ amzn_assoc_ad_type = "search"; amzn_assoc_tracking_id = "widgetsamazon-20"; amzn_assoc_marketplace = "amazon"; amzn_assoc_region = "US"; amzn_assoc_show_price = "true"; amzn_assoc_show_rating = "true"; amzn_assoc_show_image = "true"; amzn_assoc_width = "336"; amzn_assoc_height =  "280"; amzn_assoc_default_search_key =  "haskell data analysis"; amzn_assoc_theme =  "dark";
+</script><script type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_sw&ServiceVersion=20070822&MarketPlace=US&Operation=GetScript&ID=OneJS&WS=1&source=ac">
+</script>
+        </div>
+      </div>
+
+
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">5.</span> Using Graphs</h4>
+          <h4><span class="chapter-number">Chapter 5</span>&nbsp;&nbsp;<span class="chapter-title">Using Graphs</span></h4>
           <pre><code class="haskell">type Graph = Table [Vertex]</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>This section on graphs is a natural extension to the previous one about trees. A graph relieves some of the restrictions of a tree, which allows for <strong>representing network data</strong> such as social networks, biological gene relationship, and road topologies. Graphs are very common in data analysis and this chapter will cover some <strong>essential algorithms</strong>.</p>
+<ul>
+<li>Representing a graph from a <hl>list of edges</hl></li>
+<li>Representing a graph from an <hl>adjacency list</hl></li>
+<li>Conducting a <hl>topological sort</hl> on a graph</li>
+<li>Traversing a graph <hl>depth first</hl></li>
+<li>Traversing a graph <hl>breadth first<hl></li>
+<li>Visualizing a graph using graphviz</li>
+<li>Using directed acyclic word graphs</li>
+<li>Working with hexagonal and square grid networks</li>
+<li>Finding <hl>maximal cliques</hl> in a graph</li>
+<li>Determining whether two graphs are isomorphic</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">6.</span> Applying Statistical Techniques</h4>
+          <h4><span class="chapter-number">Chapter 6</span>&nbsp;&nbsp;<span class="chapter-title">Applying Statistics</span></h4>
           <pre><code class="haskell">let (b, m) = linearRegression xs ys</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>Some of the core motivations to analyze big data is to find intrinsic patterns. This chapter contains recipes that answer questions about <strong>data deviation from the norm</strong>, <strong>existence of linear and quadratic trends</strong>, and <strong>probabilistic values</strong> of a network. Some of the most fascinating results can be uncovered by following these recipes.</p>
+<ul>
+<li>Calculating a <hl>moving average</hl></li>
+<li>Calculating a <hl>moving median</hl></li>
+<li>Approximating a <hl>linear regression</hl></li>
+<li>Approximating a <hl>quadratic regression</hl></li>
+<li>Obtaining the <hl>covariance matrix</hl> from samples of data</li>
+<li>Finding all unique pairings in a list</li>
+<li>Using the Pearson correlation coefficient</li>
+<li>Evaluating a <hl>Bayesian network</hl></li>
+<li>Creating a data structure for playing cards</li>
+<li>Using a <hl>Markov chain</hl> to generate text</li>
+<li>Creating <hl>n-grams</hl> from a list</li>
+<li>Constructing a <hl>neural network perception</hl></li>
+</ul>
           <br>
         </div>
       </div>
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">7.</span> Designing Parallelism and Concurrency</h4>
+          <h4><span class="chapter-number">Chapter 7</span>&nbsp;&nbsp;<span class="chapter-title">Parallelism and Concurrency</span></h4>
           <pre><code class="haskell">a <- rpar task1</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>One of the greatest accomplishments in the study of data analysis is the intelligent approach to <strong>parallel</strong> and <strong>concurrent design</strong>. As we collect more and more data, we are able to discover more and more patterns. However, this comes at a price of time and space. More data may take more time to compute or more space in terms of memory. This is a very real problem which this chapter will try to solve.</p>
+<ul>
+<li>Benchmarking runtime performance in Haskell </li>
+<li>Benchmarking runtime performance in the terminal</li>
+<li>Evaluating a procedure in <hl>parallel</hl></li>
+<li>Controlling parallel algorithms in <hl>sequence</hl></li>
+<li><hl>Forking IO</hl> actions for concurrency</li>
+<li>Communicating with a forked IO action</li>
+<li><hl>Parallelizing pure functions</hl> using the Par monad</li>
+<li>Mapping over a list in parallel</li>
+<li>Accessing tuple elements in parallel</li>
+<li>Implementing <hl>MapReduce</hl> to count word frequencies</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">8.</span> Clustering Data</h4>
-          <pre><code class="haskell">-- coming soon</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <h4><span class="chapter-number">Chapter 8</span>&nbsp;&nbsp;<span class="chapter-title">Clustering Data</span></h4>
+          <pre><code class="haskell">let clusters = kmeans points</code></pre>
+          <p>Computer algorithms are becoming better and better at analyzing large data sets. As machines perform faster, so do their ability to detect interesting patterns in data. This chapter demonstrates algorithms that <strong>>intelligently categorize data</strong>.</p>
+<ul>
+<li>Implementing the <hl>k-means</hl> clustering algorithm </li>
+<li>Implementing <hl>hierarchical</hl> clustering </li>
+<li>Using a hierarchical clustering library</li>
+<li>Finding the number of clusters</li>
+<li>Classifying the <hl>parts of speech</hl> of words</li>
+<li>Identifying key words in a corpus of text</li>
+<li><hl>Training</hl> a parts of speech tagger</li>
+<li>Clustering words by their <hl>lexemes</hl></li>
+<li>Visualizing point clusters</li>
+<li>Visualizing points using Graphics.EasyPlot</li>
+</ul>
           <br>
         </div>
       </div>
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">9.</span> Hashing Data</h4>
+          <h4><span class="chapter-number">Chapter 9</span>&nbsp;&nbsp;<span class="chapter-title">Hashing Data</span></h4>
           <pre><code class="haskell">-- coming soon</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>...</p>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">10.</span> Analysing Real-Time Data</h4>
+          <h4><span class="chapter-number">Chapter 10</span>&nbsp;&nbsp;<span class="chapter-title">Analysing Real-Time Data</span></h4>
           <pre><code class="haskell">-- coming soon</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>...</p>
           <br>
         </div>
       </div>
      <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">11.</span> Visualizing Data</h4>
+          <h4><span class="chapter-number">Chapter 11</span>&nbsp;&nbsp;<span class="chapter-title">Visualizing Data</span></h4>
           <pre><code class="haskell">-- coming soon</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>...</p>
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">12.</span> Evoking External Programs</h4>
+          <h4><span class="chapter-number">Chapter 12</span>&nbsp;&nbsp;<span class="chapter-title">Evoking External Programs</span></h4>
           <pre><code class="haskell">-- coming soon</code></pre>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          <p>...</p>
           <br>
         </div>
       </div>
@@ -179,8 +303,6 @@
     <script src="bower_components/bootstrap/js/collapse.js"></script>
     <script src="bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
-
-    <script src="bower_components/jquery.videobackground/script/jquery.videobackground.js"></script>
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>

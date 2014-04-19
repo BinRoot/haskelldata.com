@@ -1,13 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Abel);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
+
+body { 
+  background: url('../images/bg2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-  margin-top: 0px;
+  margin-top: 50px;
 }
 @media (max-width: 800px) {
   body {
-    margin-top: 70px;
+    margin-top: 130px;
   }
+}
+
+hl {
+    background-color: rgba(255, 255, 0, 0.2);
 }
 
 .nav-preorder {
@@ -15,29 +28,17 @@ body {
     height: 50px;
 }
 
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.video-background video {
-    min-height: 100%; 
-    min-width:100%; 
-}
 .page {
     position: relative; 
     z-index: 1;
-    background: transparent url(themes/background.png) repeat top left;
-    border-radius: 5px;
     margin: 0 auto;
 }
 
 .page h1 {
-    color: #f9f999;
+    color: #fede39;
+    text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.91);
+    font-size: 54px;
+    margin-bottom: 20px;
     font-family: Poiret One;
 }
 
@@ -82,9 +83,12 @@ h3 {
 
 .chapter-number {
     font-family: Abel;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
-    color: #888888;
+}
+
+.chapter-title {
+    color: #777;
 }
 
 /* Custom page footer */
@@ -92,6 +96,11 @@ h3 {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+}
+
+.promo {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container-narrow > hr {
@@ -113,7 +122,7 @@ h3 {
 
 /* Supporting marketing content */
 .marketing {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .9);
 }
 
 .marketing p + h4 {
@@ -279,3 +288,4 @@ h3 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
