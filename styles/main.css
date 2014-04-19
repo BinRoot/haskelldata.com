@@ -63,6 +63,14 @@ body {
     padding-right: 15px;
 }
 
+.footer p {
+    color: white;
+}
+
+.footer p a {
+    color: #dff;
+}
+
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
