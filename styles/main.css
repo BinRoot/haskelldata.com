@@ -3,7 +3,7 @@
 
 
 body { 
-  background: url('../images/bg2.jpg') no-repeat center center fixed; 
+  background: url('../images/bg3.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,6 +53,21 @@ hl {
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.check { 
+    background:url(../images/checkmark.png) no-repeat 0 50%; 
+    list-style-type: none;
+    height:50px;
+    padding-left: 35px;
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    color: white;
+    font-family: Abel;
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
