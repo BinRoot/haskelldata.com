@@ -99,8 +99,8 @@ h3 {
 }
 
 .promo {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .container-narrow > hr {
@@ -153,6 +153,33 @@ h3 {
         border-bottom: 0;
     }
 }
+
+.button {
+    box-shadow: inset 0 0 2px white;
+    
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+.button:hover {
+    //border-color: #254c73;
+    -webkit-transition: box-shadow .5s ease-in;
+}
+.button:hover:before {
+    box-shadow: 0 3px 1px rgba(0,0,0,.1);
+    background-image: -webkit-radial-gradient(center top, 130px 40px, rgba(255,255,255,.4), rgba(255,255,255,.05));
+}
+.button:active:before {
+    box-shadow: none;
+}
+.button:active {
+    top: 1px;
+}
+
 
 /* Buzz Out */
 
@@ -288,4 +315,5 @@ h3 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
 
