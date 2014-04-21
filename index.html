@@ -33,10 +33,20 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=474428195927491";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <h3>Haskell Data Analysis Cookbook</h3>
+
+          <h3><img class="lambda-img" src="/images/lambda.png"/> Haskell Data Analysis Cookbook</h3>
         </div>
         <ul class="navbar-right">
           <a href="http://www.packtpub.com/haskell-data-analysis-cookbook/book" target="_blank"><button class="button btn btn-default btn-success nav-preorder buzz-out">Preorder Now! <span class="glyphicon glyphicon-ok"></span></button></a>
@@ -46,88 +56,142 @@
 
     <div class="container page">
       <div class="page">
+        <br/>
         <center>
           <h1>Over 130 Practical Recipes For Data Analysis and Machine Learning</h1>
         </center>
-
-        <ul>
-          <li class="check">Harness the power of Haskell in the real world</li>
-          <li class="check">Learn fundamental data analysis techniques</li>
-          <li class="check">Discover how to use some of the most popular Haskell libraries</li>
-          <li class="check">Apply machine learning techniques in Haskell</li>
-        </ul>
-
+        <br/>
+        <br/>
+        <br/>
+        <div id="hContainer">
+	  <div>
+            <ul>
+              <li class="check">Harness Haskell in the real world</li>
+              <li class="check">Master data analysis techniques</li>
+              <li class="check">Discover useful Haskell libraries</li>
+              <li class="check">Command machine learning algorithms</li>
+              <li class="check">Visualize and export results</li>
+            </ul>
+          </div>
+	  <div>
+            <a class="buzz-out" target="_blank" href="http://www.packtpub.com/haskell-data-analysis-cookbook/book"><img class="book-img" src="images/book.png"></a>
+          </div>
+        </div>
+        
         <br>
 
       </div>
+
+
+      <div class="row buybuttons promo">
+        <div class="col-lg-12">
+
+<div class="tw-timeline">
+<a class="twitter-timeline" href="https://twitter.com/search?q=haskell" data-widget-id="458068812588269568">Tweets about "haskell"</a>
+</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+          <div class="fb-button">
+          <div class="fb-share-button" data-href="http://haskellbook.heroku.com" data-width="100" data-type="button_count"></div>
+          </div>
+
+          <div class="tw-button">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Cheers to a new Haskell Data Analysis book!">Tweet</a>
+          </div>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+          <div class="gp-button">
+          <!-- Place this tag where you want the +1 button to render. -->
+          <div class="g-plusone" data-size="medium"></div>
+          </div>
+
+          <!-- Place this tag after the last +1 button tag. -->
+          <script type="text/javascript">
+            (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+          </script>
+
+          <div class="r-button">
+            <script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+          </div>
+
+<!--
+          <center>
+            <a class="buzz-out" href="http://www.amazon.com/Haskell-Analysis-Cookbook-Nishant-Shukla/dp/1783286334/" target="_blank">
+              <img src="images/amazon.png"/>
+            </a>
+            <a class="buzz-out" href="http://www.barnesandnoble.com/w/haskell-data-analysis-cookbook-nishant-shukla/1118701329?ean=9781783286331" target="_blank">
+              <img src="images/barnes.png"/>
+            </a>
+          </center>
+          -->
+        </div>
+      </div>
+
+
 
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 1</span>&nbsp;&nbsp;<span class="chapter-title">Obtaining Data</span></h4>
           <pre><code class="haskell">input <- readFile "input.txt"</code></pre>
-          <p>Data is everywhere, logging is cheap, and analysis is inevitable. One of the most fundamental concepts of this chapter is about <strong>gathering useful data</strong>. After building a collection, we must learn to represent this data in code. The primary focus will be on first <strong>obtaining data</strong>, and in later chapters  we will enumerate ways to represent it. This chapter will cover the following essential methods for working with Haskell input.</p>
+          <p>Data is everywhere, logging is cheap, and analysis is inevitable. The recipes in this chapater cover how to <strong>gather useful data</strong>.</p>
 <ul>
-<li>Gathering various sources to build a corpus</li>
-<li>Reading raw text from a <hl>file path</hl></li>
-<li>Reading and representing a <hl>CSV</hl> file</li>
-<li>Parsing a <hl>JSON</hl> file by using aeson</li>
-<li>Parsing <hl>XML</hl> using the HXT package</li>
-<li>Reading table rows from <hl>HTML</hl></li>
-<li>Downloading data from <hl>HTTP GET</hl> requests</li>
-<li>Downloading data from <hl>HTTP POST</hl> requests</li>
-<li>Mining data from online directory searches</li>
-<li>Querying <hl>MongoDB</hl> for data (local)</li>
-<li>Querying <hl>MongoDB</hl> for data (remote)</li>
+<li>Read text from a <hl>file path</hl></li>
+<li><hl>CSV</hl></li>
+<li><hl>JSON</hl></li>
+<li><hl>XML</hl></li>
+<li><hl>HTML</hl></li>
+<li><hl>HTTP GET</hl> requests</li>
+<li><hl>HTTP POST</hl> requests</li>
+<li><hl>MongoDB</hl></li>
 </ul>
           <br>
         </div>
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 2</span>&nbsp;&nbsp;<span class="chapter-title">Cleaning Data</span></h4>
           <pre><code class="haskell">isWhitespace x = elem x " \t\r\n"</code></pre>
-          <p>After obtaining raw text, the next natural step is to <strong>validate and clean</strong> it carefully. Even the slightest bias may risk the integrity of the results. We must take great precautionary measures, involving thorough inspection, to ensure sanity checks on our data before we begin to understand it. This section should be a starting point for <strong>cleaning data in haskell</strong>.</p>
+          <p>Learn how to <strong>validate and clean</strong> data carefully. Ensure sanity checks on data before analyzing it.</p>
 <ul>
-<li>Trimming excess <hl>whitespace</hl></li>
-<li>Ignoring <hl>punctuation</hl> and specific characters</li>
-<li>Coping with unexpected or missing input</li>
-<li>Validating records by matching <hl>regular expressions</hl></li>
-<li>Deduplication of non-conflicting data items</li>
-<li>Deduplication of conflicting data items</li>
-<li>Implemeting a frequency table using Data.List</li>
-<li>Implemeting a frequency table using Data.MultiSet</li>
-<li>Computing the <hl>Manhattan distance</hl></li>
-<li>Computing the <hl>Euclidean distance</hl></li>
-<li>Comparing scaled data using the <hl>Pearson Correlation</hl> Coefficient</li>
-<li>Comparing sparse data using <hl>cosine similarity</hl></li>
+<li>Trimming <hl>whitespace</hl></li>
+<li>Ignoring <hl>punctuation</hl></li>
+<li><hl>unexpected input</hl></li>
+<li><hl>regular expressions</hl></li>
+<li><hl>Deduplication</hl></li>
+<li><hl>frequency table</hl></li>
+<li><hl>Manhattan distance</hl></li>
+<li><hl>Euclidean distance</hl></li>
+<li><hl>Pearson Correlation</hl></li>
+<li><hl>Cosine similarity</hl></li>
 </ul>
           <br>
         </div>
       </div>
 
-      <div class="row marketing promo">
-        <div class="col-lg-12">
-          <center><a class="buzz-out" target="_blank" href="http://www.packtpub.com/haskell-data-analysis-cookbook/book"><img width="300px" src="images/book.png"></center></a>
-        </div>
-      </div>
+
+
+
+
 
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 3</span>&nbsp;&nbsp;<span class="chapter-title">Manipulating Strings</span></h4>
           <pre><code class="haskell">let strs = splitOn "," "bob,joe,nick"</code></pre>
-          <p>Many interesting analysis techniques can be used on a large corpus of words. Whether it be examining the structure of a sentence or the content of a book, these recipes will introduce us to some useful tools. This section focuses on <strong>base-conversions</strong>, <strong>search algorithms</strong>, and <strong>similarity measurements with strings</strong>.</p>
+          <p>Many interesting analysis techniques can be used on a large corpus of <strong>words</strong> to examine the structure of a <strong>sentence</strong> or the contents of a book.</p>
 <ul>
-<li>Displaying a number in another base</li>
-<li>Reading a number from another base</li>
-<li>Searching for a <hl>substring</hl> using Data.ByteString</li>
-<li>Searching a string using the <hl>Boyer–Moore–Horspool</hl> algorithm</li>
-<li>Searching a string using the <hl>Rabin-Karp</hl> algorithm</li>
-<li><hl>Split</hl> string on lines, words, or arbitrary tokens</li>
-<li>Finding the <hl>longest common subsequence</hl></li>
-<li>Computing a phonetic code</li>
-<li>Calculating the <hl>edit distance</hl> between two strings</li>
-<li>Computing <hl>Jaro–Winkler</hl> distance between two strings</li>
-<li>Scraping a body of text for words</li>
-<li>Finding strings within one edit distance</li>
-<li>Fixing <hl>spelling mistakes</hl> using edit distance</li>
+<li><hl>Base conversion</hl></li>
+<li><hl>Substring search</hl> (Boyer–Moore–Horspool, Rabin-Karp)</li>
+<li><hl>Split</hl> a string</li>
+<li><hl>longest common subsequence</hl></li>
+<li><hl>phonetic</hl> code</li>
+<li><hl>Edit distance</hl></li>
+<li><hl>Jaro–Winkler</hl> distance</li>
+<li><hl>Scraping</hl> text</li>
+<li>Fixing <hl>spelling mistakes</hl></li>
 </ul>
           <br>
         </div>
@@ -136,73 +200,54 @@
           <pre><code class="haskell">data Tree = Node v l r | Null</code></pre>
           <p>Everything from creating simple <strong>binary trees</strong> to practical applications such as <strong>Huffman trees</strong> are covered in this section.</p>
 <ul>
-<li>Defining a <hl>binary tree</hl> data type</li>
-<li>Defining a <hl>rose tree</hl> (multi-way tree) data type</li>
-<li>Traversing a tree <hl>depth-first</hl></li>
-<li>Traversing a tree <hl>breadth-first</hl></li>
-<li>Implementing a Foldable instance for a tree</li>
-<li>Calculating the <hl>height</hl> of a tree</li>
-<li>Implementing a binary search tree data structure</li>
-<li>Verifying the order property of a binary search tree</li>
-<li>Using an <hl>AVL</hl> tree from Data.Tree.AVL</li>
-<li>Implementing a <hl>min-heap</hl> data structure</li>
-<li>Encoding a string using a <hl>Huffman tree</hl></li>
-<li>Decoding a Huffman code</li>
+<li><hl>Binary tree</hl></li>
+<li><hl>Rose tree</hl></li>
+<li><hl>Depth-first</hl> traversal</li>
+<li><hl>Breadth-first</hl> traversal</li>
+<li><hl>Height</hl> of a tree</li>
+<li><hl>Binary search tree</hl></li>
+<li><hl>AVL tree</hl></li>
+<li><hl>Min-heap</hl></li>
+<li><hl>Huffman tree</hl> encoding and decoding</li>
 </ul>
           <br>
         </div>
       </div>
 
-      <div class="row marketing promo">
-        <div class="col-lg-12">
-          <center>
-<a class="buzz-out" href="http://www.amazon.com/Haskell-Analysis-Cookbook-Nishant-Shukla/dp/1783286334/" target="_blank">
-  <img src="images/amazon.png"/>
-</a>
-<a class="buzz-out" href="http://www.barnesandnoble.com/w/haskell-data-analysis-cookbook-nishant-shukla/1118701329?ean=9781783286331" target="_blank">
-<img src="images/barnes.png"/>
-</a>
-</center>
-        </div>
-      </div>
 
 
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 5</span>&nbsp;&nbsp;<span class="chapter-title">Using Graphs</span></h4>
           <pre><code class="haskell">type Graph = Table [Vertex]</code></pre>
-          <p>This section on graphs is a natural extension to the previous one about trees. A graph relieves some of the restrictions of a tree, which allows for <strong>representing network data</strong> such as social networks, biological gene relationship, and road topologies. Graphs are very common in data analysis and this chapter will cover some <strong>essential algorithms</strong>.</p>
+          <p>A graph allows for <strong>representing network data</strong> such as social networks, biological gene relationship, and road topologies. Graphs are very common in data analysis and this chapter will cover some <strong>essential algorithms</strong>.</p>
 <ul>
-<li>Representing a graph from a <hl>list of edges</hl></li>
-<li>Representing a graph from an <hl>adjacency list</hl></li>
-<li>Conducting a <hl>topological sort</hl> on a graph</li>
-<li>Traversing a graph <hl>depth first</hl></li>
-<li>Traversing a graph <hl>breadth first<hl></li>
-<li>Visualizing a graph using graphviz</li>
-<li>Using directed acyclic word graphs</li>
-<li>Working with hexagonal and square grid networks</li>
-<li>Finding <hl>maximal cliques</hl> in a graph</li>
-<li>Determining whether two graphs are isomorphic</li>
+<li><hl>List of edges</hl></li>
+<li><hl>Adjacency list</hl></li>
+<li><hl>Topological sort</hl></li>
+<li><hl>Depth first</hl> traversal</li>
+<li><hl>Breadth first</hl> traversal</li>
+<li><hl>Visualizing</hl> a graph</li>
+<li><hl>Directed acyclic word</hl> graphs</li>
+<li><hl>hexagonal</hl> and </hl>square</hl> grids</li>
+<li><hl>Maximal cliques</hl></li>
 </ul>
           <br>
         </div>
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 6</span>&nbsp;&nbsp;<span class="chapter-title">Applying Statistics</span></h4>
           <pre><code class="haskell">let (b, m) = linearRegression xs ys</code></pre>
-          <p>Some of the core motivations to analyze big data is to find intrinsic patterns. This chapter contains recipes that answer questions about <strong>data deviation from the norm</strong>, <strong>existence of linear and quadratic trends</strong>, and <strong>probabilistic values</strong> of a network. Some of the most fascinating results can be uncovered by following these recipes.</p>
+          <p>This chapter contains recipes that answer questions about <strong>data deviation from the norm</strong>, <strong>existence of linear and quadratic trends</strong>, and <strong>probabilistic values</strong> of a network.</p>
 <ul>
-<li>Calculating a <hl>moving average</hl></li>
-<li>Calculating a <hl>moving median</hl></li>
-<li>Approximating a <hl>linear regression</hl></li>
-<li>Approximating a <hl>quadratic regression</hl></li>
-<li>Obtaining the <hl>covariance matrix</hl> from samples of data</li>
-<li>Finding all unique pairings in a list</li>
-<li>Using the Pearson correlation coefficient</li>
-<li>Evaluating a <hl>Bayesian network</hl></li>
-<li>Creating a data structure for playing cards</li>
-<li>Using a <hl>Markov chain</hl> to generate text</li>
-<li>Creating <hl>n-grams</hl> from a list</li>
-<li>Constructing a <hl>neural network perception</hl></li>
+<li><hl>moving average</hl> and <hl>median</hl></li>
+<li><hl>Linear</hl> and <hl>quadratic regression</hl></li>
+<li><hl>Covariance matrix</hl></li>
+<li><hl>Pearson correlation</hl> coefficient</li>
+<li><hl>Bayesian network</hl></li>
+<li><hl>Playing cards</hl></li>
+<li><hl>Markov chain</hl></li>
+<li><hl>N-grams</hl></li>
+<li><hl>Neural network</hl> perception</li>
 </ul>
           <br>
         </div>
@@ -211,36 +256,31 @@
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 7</span>&nbsp;&nbsp;<span class="chapter-title">Parallelism / Concurrency</span></h4>
           <pre><code class="haskell">a <- rpar task1</code></pre>
-          <p>One of the greatest accomplishments in the study of data analysis is the intelligent approach to <strong>parallel</strong> and <strong>concurrent design</strong>. As we collect more and more data, we are able to discover more and more patterns. However, this comes at a price of time and space. More data may take more time to compute or more space in terms of memory. This is a very real problem which this chapter will try to solve.</p>
+          <p>This chapter will cover <strong>parallel</strong> and <strong>concurrent design</strong>. Massive data analysis is a very real problem which this chapter will try to solve.</p>
 <ul>
-<li>Benchmarking runtime performance in Haskell </li>
-<li>Benchmarking runtime performance in the terminal</li>
-<li>Evaluating a procedure in <hl>parallel</hl></li>
-<li>Controlling parallel algorithms in <hl>sequence</hl></li>
-<li><hl>Forking IO</hl> actions for concurrency</li>
-<li>Communicating with a forked IO action</li>
-<li><hl>Parallelizing pure functions</hl> using the Par monad</li>
-<li>Mapping over a list in parallel</li>
-<li>Accessing tuple elements in parallel</li>
-<li>Implementing <hl>MapReduce</hl> to count word frequencies</li>
+<li><hl>Benchmarking runtime</hl></li>
+<li>Evaluating in <hl>parallel</hl></li>
+<li>Controlling algorithms in <hl>sequence</hl></li>
+<li><hl>Forking IO</hl></li>
+<li><hl>Parallelizing pure functions</hl></li>
+<li><hl>Mapping</hl> in parallel</li>
+<li><hl>Accessing tuple elements</hl> in parallel</li>
+<li><hl>MapReduce</hl></li>
 </ul>
           <br>
         </div>
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 8</span>&nbsp;&nbsp;<span class="chapter-title">Clustering Data</span></h4>
           <pre><code class="haskell">let clusters = kmeans points</code></pre>
-          <p>Computer algorithms are becoming better and better at analyzing large data sets. As machines perform faster, so do their ability to detect interesting patterns in data. This chapter demonstrates algorithms that <strong>>intelligently categorize data</strong>.</p>
+          <p>Computer algorithms are becoming better and better at analyzing large data sets. As machines perform faster, so do their ability to detect <strong>interesting patterns</strong> in data.</p>
 <ul>
-<li>Implementing the <hl>k-means</hl> clustering algorithm </li>
-<li>Implementing <hl>hierarchical</hl> clustering </li>
-<li>Using a hierarchical clustering library</li>
-<li>Finding the number of clusters</li>
-<li>Classifying the <hl>parts of speech</hl> of words</li>
-<li>Identifying key words in a corpus of text</li>
+<li><hl>K-means</hl> clustering</li>
+<li><hl>Hierarchical</hl> clustering</li>
+<li><hl>Number of clusters</hl></li>
+<li><hl>Parts of speech</hl></li>
 <li><hl>Training</hl> a parts of speech tagger</li>
-<li>Clustering words by their <hl>lexemes</hl></li>
-<li>Visualizing point clusters</li>
-<li>Visualizing points using Graphics.EasyPlot</li>
+<li><hl>Word lexemes</hl> clustering</li>
+<li><hl>Visualizing</hl></li>
 </ul>
           <br>
         </div>

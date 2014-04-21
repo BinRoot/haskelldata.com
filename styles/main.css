@@ -17,10 +17,14 @@ body {
   body {
     margin-top: 130px;
   }
+  .book-img {
+    margin-left: 100px;  
+  }
+
 }
 
 hl {
-    background-color: rgba(255, 255, 0, 0.2);
+/*   background-color: rgba(255, 255, 0, 0.2); */
 }
 
 .nav-preorder {
@@ -55,25 +59,12 @@ body {
     padding-bottom: 20px;
 }
 
-.check { 
-    background:url(../images/checkmark.png) no-repeat 0 50%; 
-    list-style-type: none;
-    height:50px;
-    padding-left: 35px;
-    padding-top: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    color: white;
-    font-family: Abel;
-    font-size: 20px;
-    text-shadow: 0 1px 0 rgba(0,0,0,.5);
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
+    padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -143,9 +134,85 @@ h3 {
     padding: 14px 24px;
 }
 
+
+.check { 
+    display: block;
+    background:url(../images/checkmark.png) no-repeat 0 50%; 
+    list-style-type: none;
+    height:50px;
+    padding-left: 35px;
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    color: white;
+    font-family: Abel;
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+}
+
+#hContainer {
+    text-align: justify;
+}
+#hContainer > div {
+    display: inline-block;
+    vertical-align: top;
+
+    /* IE fix. */
+    *display: inline;
+    zoom: 1;
+}
+#hContainer:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
 /* Supporting marketing content */
 .marketing {
     background: rgba(255, 255, 255, .9);
+}
+
+.buybuttons {
+    background: rgba(240, 10, 40, .35);
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-top-right-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-topright: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, .9);
+}
+
+.fb-button {
+    margin-bottom: 25px;
+}
+
+.tw-button {
+    margin-bottom: 20px;
+}
+
+.gp-button {
+    margin-bottom: 20px;
+}
+
+.tw-timeline {
+    float:right;
+    min-width: 100px;
+    width: 75%;
+}
+
+.lambda-img {
+    height:30px;
+    margin-top:-5px;
+}
+
+.book-img {
+    width: 250px;
+    margin-top: 20px;
 }
 
 .marketing p + h4 {
@@ -157,6 +224,16 @@ h3 {
     .container {
         max-width: 730px;
     }
+
+    #hContainer > div {
+        display: inline-block;
+        vertical-align: top;
+
+        /* IE fix. */
+        *display: inline;
+        zoom: 1;
+    }
+
 
     /* Remove the padding we set earlier */
     .header,
@@ -175,6 +252,7 @@ h3 {
     .jumbotron {
         border-bottom: 0;
     }
+
 }
 
 .button {
