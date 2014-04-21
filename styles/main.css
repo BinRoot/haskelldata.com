@@ -10,12 +10,10 @@ body {
   background-size: cover;
 }
 
-body {
-  margin-top: 50px;
-}
+
 @media (max-width: 800px) {
   body {
-    margin-top: 130px;
+
   }
   .book-img {
     margin-left: 50px;  
@@ -57,10 +55,20 @@ hl {
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.amazon-button {
+    width: 48px;
+    margin-left: 6px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+.barnes-button {
+    width: 50px;
+    margin-top: 5px;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -85,7 +93,6 @@ body {
 }
 
 h3 {
-    padding-top:5px;
     padding-left:10px;
     font-size: 20px;
 }
@@ -143,7 +150,7 @@ h3 {
     background:url(../images/checkmark.png) no-repeat 0 50%; 
     list-style-type: none;
     height:50px;
-    padding-left: 35px;
+    padding-left: 38px;
     padding-top: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -173,21 +180,22 @@ h3 {
 
 /* Supporting marketing content */
 .marketing {
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, .95);
 }
 
 .buybuttons {
-    background: rgba(240, 10, 40, .35);
+    background: rgba(255, 255, 255, .95);
     -webkit-border-top-left-radius: 25px;
     -webkit-border-top-right-radius: 25px;
     -moz-border-radius-topleft: 25px;
     -moz-border-radius-topright: 25px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-
+/*
     border-style: groove;
     border-width: 2px;
     border-color: rgba(255, 255, 255, .9);
+*/
 }
 
 .fb-button {
@@ -205,7 +213,6 @@ h3 {
 
 .gp-button {
     float: left;
-    margin-right: 20px;
     margin-bottom: 10px;
     margin-top:15px;
 }
