@@ -20,6 +20,9 @@ body {
   .book-img {
     margin-left: 50px;  
   }
+  .check {
+      margin-left: -20px;
+  }
 
 }
 
@@ -203,7 +206,7 @@ h3 {
 .tw-timeline {
     float:right;
     min-width: 100px;
-    width: 70%;
+    width: 65%;
 }
 
 .lambda-img {
