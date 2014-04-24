@@ -150,10 +150,10 @@ h3 {
 
 .checklist {
     text-align: left;
-    width: 400px;
-
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:20px;
 }
 
 .check { 
