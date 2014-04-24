@@ -11,18 +11,6 @@ body {
 }
 
 
-@media (max-width: 800px) {
-  body {
-
-  }
-  .book-img {
-      margin-left: 20px;
-  }
-  .check {
-      margin-left: -20px;
-  }
-}
-
 hl {
 /*   background-color: rgba(255, 255, 0, 0.2); */
 }
@@ -70,6 +58,13 @@ body {
 .barnes-button {
     width: 50px;
     margin-top: 5px;
+}
+
+.packt-button {
+    width: 50px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -150,10 +145,9 @@ h3 {
 
 .checklist {
     text-align: left;
-    width: 350px;
+    width: 330px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:20px;
 }
 
 .check { 
@@ -241,9 +235,7 @@ h3 {
 }
 
 .book-img {
-    width: 250px;
-    position: absolute;
-    margin-top: 20px;
+    
 }
 
 .checkbook {
@@ -254,8 +246,8 @@ h3 {
     margin-right: auto;
     padding-left: 20px;
     padding-top: 10px;
-    width: 400px;
-    height: 493px;
+    width: 350px;
+    height: 431px;
 }
 
 .marketing p + h4 {
@@ -266,15 +258,6 @@ h3 {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
-    }
-
-    #hContainer > div {
-        display: inline-block;
-        vertical-align: top;
-
-        /* IE fix. */
-        *display: inline;
-        zoom: 1;
     }
 
 
