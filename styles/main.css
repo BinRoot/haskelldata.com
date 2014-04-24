@@ -146,9 +146,12 @@ h3 {
     padding: 14px 24px;
 }
 
+
+
 .checklist {
     text-align: left;
     width: 400px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -164,6 +167,7 @@ h3 {
     margin-bottom: 5px;
 
     color: white;
+    font-weight: 900;
     font-family: Abel;
     font-size: 20px;
     text-shadow: 0 1px 0 rgba(0,0,0,.5);
