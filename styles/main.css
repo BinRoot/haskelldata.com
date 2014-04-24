@@ -28,7 +28,8 @@ hl {
 }
 
 .nav-preorder {
-    margin-top:10px;
+    margin-top:5px;
+    margin-bottom:4px;
     height: 50px;
 }
 
@@ -145,6 +146,12 @@ h3 {
     padding: 14px 24px;
 }
 
+.checklist {
+    text-align: left;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .check { 
     display: block;
@@ -231,7 +238,20 @@ h3 {
 
 .book-img {
     width: 250px;
+    position: absolute;
     margin-top: 20px;
+}
+
+.checkbook {
+    background-image:url('../images/book.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 400px;
+    height: 493px;
 }
 
 .marketing p + h4 {
