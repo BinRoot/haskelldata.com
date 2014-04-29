@@ -188,11 +188,11 @@ h3 {
 
 /* Supporting marketing content */
 .marketing {
-    background: rgba(255, 255, 255, .95);
+    background: rgba(255, 255, 255, .9);
 }
 
 .buybuttons {
-    background: rgba(255, 255, 255, .95);
+    background: rgba(255, 255, 255, .9);
     -webkit-border-top-left-radius: 25px;
     -webkit-border-top-right-radius: 25px;
     -moz-border-radius-topleft: 25px;
