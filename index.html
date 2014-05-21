@@ -7,7 +7,7 @@
     <meta name="google-site-verification" content="uBzZuEprs7Xe3uLA3c8ZJHESeKky4Ce4PnvV81Inw54" />
     <meta charset="utf-8">
     <title>Haskell Data Analysis Cookbook</title>
-    <meta name="description" content="A practical and concise guide to using Haskell when getting to grips with data analysis">
+    <meta name="description" content="Explore intuitive data analysis techniques and powerful machine learning methods using over 120 practical recipes. Study step-by-step recipes filled with concise code samples and engaging examples that demonstrate Haskell in practice, and then the concepts behind the code.">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -290,28 +290,60 @@
       <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 9</span>&nbsp;&nbsp;<span class="chapter-title">Hashing Data</span></h4>
-          <pre><code class="haskell">-- coming soon</code></pre>
-          <p>...</p>
+          <pre><code class="haskell">let checksum = md5 file</code></pre>
+          <p>To summarize an item into a small and typically fixed length value, we apply a <strong>hashing function</strong> to it. This chapter will cover the following recipes.</p>
+<ul>
+<li>Hashing data</li>
+<li>MD5 and cryptographic checksums</li>
+<li>Using a hash table</li>
+<li>Google's CityHash</li>
+<li>Geohashing</li>
+<li>Bloom filter</li>
+<li>Perceptual hashing</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 10</span>&nbsp;&nbsp;<span class="chapter-title">Analysing Real-Time Data</span></h4>
-          <pre><code class="haskell">-- coming soon</code></pre>
-          <p>...</p>
+          <pre><code class="haskell">h <- connectTo "localhost" myPort</code></pre>
+          <p>The gratifying nature of analyzing data the moment it is received is the core subject of this chapter. The following <strong>real-time data</strong> topics will be covered.</p>
+<ul>
+<li>Streaming Twitter data</li>
+<li>IRC bot</li>
+<li>Polling a webserver</li>
+<li>Repsonding to system events</li>
+<li>Sockets</li>
+</ul>
           <br>
         </div>
       </div>
      <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 11</span>&nbsp;&nbsp;<span class="chapter-title">Visualizing Data</span></h4>
-          <pre><code class="haskell">-- coming soon</code></pre>
-          <p>...</p>
+          <pre><code class="haskell">plot X11 Data2D [Color Red] [] pts</code></pre>
+          <p>Visualizing data is important in all steps of data analysis. It is always useful to have an inutitive understanding so this chapter covers many ways to <strong>graph data</strong>.</p>
+<ul>
+<li>Plotting a line graph</li>
+<li>Plotting a pie-chart</li>
+<li>Plotting a bar graph</li>
+<li>Displaying a scatter plot</li>
+<li>Visualizing a graphical network</li>
+<li>Using D3.js</li>
+</ul>
           <br>
         </div>
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 12</span>&nbsp;&nbsp;<span class="chapter-title">Exporting Data</span></h4>
-          <pre><code class="haskell">-- coming soon</code></pre>
-          <p>...</p>
+          <pre><code class="haskell">save = insertMany "item" mongoList</code></pre>
+          <p>The last important step in data analysis is to export and present the data in a usable format. The recipes in this chapter cover how to <strong>save</strong> and <strong>present</strong> data.</p>
+<ul>
+<li>Exporting to CSV</li>
+<li>JSON</li>
+<li>SQLite</li>
+<li>MongoDB</li>
+<li>HTML</li>
+<li>LaTeX</li>
+</ul>
           <br>
         </div>
       </div>
