@@ -49,7 +49,7 @@ body {
 }
 
 .amazon-button {
-    width: 50px;
+//    width: 50px;
     height: 45px;
     margin-left: 6px;
     margin-right: 4px;
@@ -85,6 +85,8 @@ body {
 .footer p a {
     color: #4ff;
 }
+
+
 
 /* Custom page header */
 .header {
