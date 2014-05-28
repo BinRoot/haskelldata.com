@@ -195,10 +195,32 @@
           <br>
         </div>
         <div class="col-lg-6">
-          <h4><span class="chapter-number">Chapter 4</span>&nbsp;&nbsp;<span class="chapter-title">Using Trees</span></h4>
-          <pre><code class="haskell">data Tree = Node v l r | Null</code></pre>
+          <h4><span class="chapter-number">Chapter 4</span>&nbsp;&nbsp;<span class="chapter-title">Hashing Data</span></h4>
+          <pre><code class="haskell">let checksum = md5 file</code></pre>
 <center>
 <img class="chapter-img" src="/images/ch04.png"/>
+</center>
+          <p>To summarize an item into a small and typically fixed length value, we apply a <strong>hashing function</strong> to it. This chapter will cover the following recipes.</p>
+<ul>
+<li>Hashing data</li>
+<li>MD5 and cryptographic checksums</li>
+<li>Using a hash table</li>
+<li>Google's CityHash</li>
+<li>Geohashing</li>
+<li>Bloom filter</li>
+<li>Perceptual hashing</li>
+</ul>
+          <br>
+        </div>
+      </div>
+
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4><span class="chapter-number">Chapter 5</span>&nbsp;&nbsp;<span class="chapter-title">Using Trees</span></h4>
+          <pre><code class="haskell">data Tree = Node v l r | Null</code></pre>
+<center>
+<img class="chapter-img" src="/images/ch05.png"/>
 </center>
           <p>Everything from creating simple <strong>binary trees</strong> to practical applications such as <strong>Huffman trees</strong> are covered in this section.</p>
 <ul>
@@ -214,16 +236,11 @@
 </ul>
           <br>
         </div>
-      </div>
-
-
-
-      <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">Chapter 5</span>&nbsp;&nbsp;<span class="chapter-title">Using Graphs</span></h4>
+          <h4><span class="chapter-number">Chapter 6</span>&nbsp;&nbsp;<span class="chapter-title">Using Graphs</span></h4>
           <pre><code class="haskell">type Graph = Table [Vertex]</code></pre>
 <center>
-<img class="chapter-img" src="/images/ch05.png"/>
+<img class="chapter-img" src="/images/ch06.png"/>
 </center>
           <p>A graph allows for <strong>representing network data</strong> such as social networks, biological gene relationship, and road topologies. Graphs are very common in data analysis and this chapter will cover some <strong>essential algorithms</strong>.</p>
 <ul>
@@ -239,11 +256,15 @@
 </ul>
           <br>
         </div>
+      </div>
+
+
+      <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">Chapter 6</span>&nbsp;&nbsp;<span class="chapter-title">Applying Statistics</span></h4>
+          <h4><span class="chapter-number">Chapter 7</span>&nbsp;&nbsp;<span class="chapter-title">Applying Statistics</span></h4>
           <pre><code class="haskell">let (b, m) = linearRegression xs ys</code></pre>
 <center>
-<img class="chapter-img" src="/images/ch06.png"/>
+<img class="chapter-img" src="/images/ch07.png"/>
 </center>
           <p>This chapter contains recipes that answer questions about <strong>data deviation from the norm</strong>, <strong>existence of linear and quadratic trends</strong>, and <strong>probabilistic values</strong> of a network.</p>
 <ul>
@@ -256,27 +277,6 @@
 <li><hl>Markov chain</hl></li>
 <li><hl>N-grams</hl></li>
 <li><hl>Neural network</hl> perception</li>
-</ul>
-          <br>
-        </div>
-      </div>
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><span class="chapter-number">Chapter 7</span>&nbsp;&nbsp;<span class="chapter-title">Parallelism / Concurrency</span></h4>
-          <pre><code class="haskell">a <- rpar task1</code></pre>
-<center>
-<img class="chapter-img" src="/images/ch07.png"/>
-</center>
-          <p>This chapter will cover <strong>parallel</strong> and <strong>concurrent design</strong>. Massive data analysis is a very real problem which this chapter will try to solve.</p>
-<ul>
-<li><hl>Benchmarking runtime</hl></li>
-<li>Evaluating in <hl>parallel</hl></li>
-<li>Controlling algorithms in <hl>sequence</hl></li>
-<li><hl>Forking IO</hl></li>
-<li><hl>Parallelizing pure functions</hl></li>
-<li><hl>Mapping</hl> in parallel</li>
-<li><hl>Accessing tuple elements</hl> in parallel</li>
-<li><hl>MapReduce</hl></li>
 </ul>
           <br>
         </div>
@@ -299,25 +299,29 @@
           <br>
         </div>
       </div>
+
+
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4><span class="chapter-number">Chapter 9</span>&nbsp;&nbsp;<span class="chapter-title">Hashing Data</span></h4>
-          <pre><code class="haskell">let checksum = md5 file</code></pre>
+          <h4><span class="chapter-number">Chapter 9</span>&nbsp;&nbsp;<span class="chapter-title">Parallelism / Concurrency</span></h4>
+          <pre><code class="haskell">a <- rpar task1</code></pre>
 <center>
 <img class="chapter-img" src="/images/ch09.png"/>
 </center>
-          <p>To summarize an item into a small and typically fixed length value, we apply a <strong>hashing function</strong> to it. This chapter will cover the following recipes.</p>
+          <p>This chapter will cover <strong>parallel</strong> and <strong>concurrent design</strong>. Massive data analysis is a very real problem which this chapter will try to solve.</p>
 <ul>
-<li>Hashing data</li>
-<li>MD5 and cryptographic checksums</li>
-<li>Using a hash table</li>
-<li>Google's CityHash</li>
-<li>Geohashing</li>
-<li>Bloom filter</li>
-<li>Perceptual hashing</li>
+<li><hl>Benchmarking runtime</hl></li>
+<li>Evaluating in <hl>parallel</hl></li>
+<li>Controlling algorithms in <hl>sequence</hl></li>
+<li><hl>Forking IO</hl></li>
+<li><hl>Parallelizing pure functions</hl></li>
+<li><hl>Mapping</hl> in parallel</li>
+<li><hl>Accessing tuple elements</hl> in parallel</li>
+<li><hl>MapReduce</hl></li>
 </ul>
           <br>
         </div>
+
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 10</span>&nbsp;&nbsp;<span class="chapter-title">Analysing Real-Time Data</span></h4>
           <pre><code class="haskell">h <- connectTo "localhost" myPort</code></pre>
@@ -335,6 +339,8 @@
           <br>
         </div>
       </div>
+
+
      <div class="row marketing">
         <div class="col-lg-6">
           <h4><span class="chapter-number">Chapter 11</span>&nbsp;&nbsp;<span class="chapter-title">Visualizing Data</span></h4>
