@@ -204,6 +204,12 @@ pre {
     border:45px dotted rgba(109, 188, 81, .20);
 }
 
+@-moz-document url-prefix() {
+    .chapter-img {
+        border:40px outset rgba(109, 188, 81, .20);
+    }
+}
+
 .buybuttons {
     background: rgba(255, 255, 255, .9);
     -webkit-border-top-left-radius: 25px;
