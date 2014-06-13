@@ -200,6 +200,8 @@ pre {
 
 .chapter-img {
     height: 300px;
+    padding:10px;
+    border:45px dotted rgba(109, 188, 81, .20);
 }
 
 .buybuttons {
