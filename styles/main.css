@@ -69,6 +69,11 @@ body {
     margin-left: 5px;
 }
 
+.code-button {
+    float: right;
+    margin-bottom: 1px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -205,13 +210,13 @@ pre {
 
 .chapter-img {
     height: 300px;
-    padding:10px;
-    border:45px dotted rgba(109, 188, 81, .20);
+    padding:10px; 
+/*    border:45px dotted rgba(109, 188, 81, .20); */
 }
 
 @-moz-document url-prefix() {
     .chapter-img {
-        border:40px outset rgba(109, 188, 81, .20);
+/*        border:40px outset rgba(109, 188, 81, .20); */
     }
 }
 
